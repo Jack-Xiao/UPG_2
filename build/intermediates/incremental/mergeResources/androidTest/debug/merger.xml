@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="D:\Download\Extra_APK\PhotoView-master\library\build\intermediates\bundles\debug\res"/></dataSet><dataSet config="main"><source path="D:\Download\Extra_APK\PhotoView-master\library\src\androidTest\res"/><source path="D:\Download\Extra_APK\PhotoView-master\library\build\generated\res\rs\androidTest\debug"/><source path="D:\Download\Extra_APK\PhotoView-master\library\build\generated\res\generated\androidTest\debug"/></dataSet><mergedItems/></merger>

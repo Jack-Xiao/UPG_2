@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    >  
+    
+    <TextView 
+        android:id="@+id/wx_check_itemArrow"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:layout_marginRight="10dp"
+    	android:text=">"
+    	android:textColor="#666666"
+    	android:textSize="20sp"
+        />
+    <Button 
+        android:id="@+id/wx_check_itemBtn"
+        android:layout_width="74dp"
+    	android:layout_height="wrap_content"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:layout_marginRight="5dp"
+    	android:layout_toLeftOf="@id/itemArrow"
+    	android:paddingTop="3dp"
+    	android:paddingBottom="3dp"
+    	android:gravity="center"
+    	android:text="维修"
+    	android:textColor="#FFFFFF"
+    	android:textSize="16sp"
+    	android:background="#005FCB"
+    	android:visibility="gone"
+        />
+    <TextView 
+        android:id="@+id/wx_check_itemName"
+        android:layout_width="match_parent"  
+    	android:layout_height="wrap_content"
+    	android:paddingTop="10dp"
+    	android:paddingBottom="10dp"
+    	android:layout_centerVertical="true"
+    	android:layout_toLeftOf="@id/itemBtn"
+    	android:textColor="#000000"
+    	android:textSize="14sp"
+    	android:gravity="center_horizontal"
+        />
+    <View 
+	    android:layout_width="match_parent"  
+	   	android:layout_height="1dp"
+	   	android:layout_alignParentBottom="true"
+	   	android:background="#CCCCCC"
+	     />
+</RelativeLayout> 
+<!-- From: file:/F:/workspace/UPG/res/layout/wx_task_list_item.xml -->

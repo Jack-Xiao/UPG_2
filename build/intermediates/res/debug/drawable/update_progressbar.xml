@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"> 
+   <item android:id="@android:id/background">   
+    <shape>   
+        <padding android:left="1dp" android:top="1dp" android:right="1dp"
+		android:bottom="1dp" />
+        <solid android:color="#FFF" />
+        <stroke android:width="1dip" android:color="#CCCCCC" />
+    </shape>   
+</item>   
+<item android:id="@android:id/secondaryProgress">   
+    <clip>   
+        <shape>   
+            <padding android:left="1dp" android:top="1dp" android:right="1dp"
+				android:bottom="1dp" />
+            <solid android:color="#36B539" />
+        </shape>   
+    </clip>   
+</item>   
+<item android:id="@android:id/progress" >   
+    <clip>   
+        <shape>   
+            <padding android:left="1dp" android:top="1dp" android:right="1dp"
+				android:bottom="1dp" />
+            <solid android:color="#36B539" /> 
+        </shape>   
+    </clip>   
+</item> 
+</layer-list><!-- From: file:/F:/workspace/UPG/res/drawable/update_progressbar.xml -->

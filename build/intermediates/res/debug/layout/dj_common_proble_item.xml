@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"  
+    android:layout_height="wrap_content"  
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    >
+    <CheckBox 
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dp"
+    	android:focusable="false"
+    	android:layout_gravity="center_vertical"
+    	style="@style/CustomCheckboxTheme"
+        />
+
+    
+	<TextView 
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	   	android:layout_gravity="center_vertical"
+	   	android:textColor="#000000"
+	   	android:textSize="14sp"
+	   	android:singleLine="true"
+	   	android:ellipsize="end"
+	   	android:padding="10dp"
+	    />
+</LinearLayout> 
+<!-- From: file:/F:/workspace/UPG/res/layout/dj_common_proble_item.xml -->

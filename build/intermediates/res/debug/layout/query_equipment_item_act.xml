@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <include
+                    android:id="@+id/equipmentInfo"
+                    layout="@layout/query_equipment_item_layout" />
+
+                <include
+                    android:id="@+id/pEquip"
+                    layout="@layout/query_equipment_item_layout" />
+
+                <include
+                    android:id="@+id/useStatus"
+                    layout="@layout/query_equipment_item_layout" />
+
+                <include
+                    android:id="@+id/storage"
+                    layout="@layout/query_equipment_item_layout" />
+
+                <include
+                    android:id="@+id/manufacturer"
+                    layout="@layout/query_equipment_item_layout" />
+
+                <include
+                    android:id="@+id/mfgNO"
+                    layout="@layout/query_equipment_item_layout" />
+
+                <include
+                    android:id="@+id/modelNO"
+                    layout="@layout/query_equipment_item_layout" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <Button
+                        android:id="@+id/btnEquipmentInfoMore"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/query_buttonbackgroundblue"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="更多"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+            
+			<ScrollView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:scrollbarAlwaysDrawVerticalTrack="false">"
+			
+            <LinearLayout
+                android:id="@+id/equipAttachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+				
+            </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/F:/workspace/UPG/res/layout/query_equipment_item_act.xml -->

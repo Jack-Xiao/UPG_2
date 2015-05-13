@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="#77000000"  
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:orientation="vertical" 
+	    android:background="#FFF">
+	    
+	    <include
+            android:id="@+id/equipmentInfo"
+            layout="@layout/query_equipment_item_layout" />
+	    <include 
+	        android:id="@+id/k3NO"
+	        layout="@layout/query_equipment_item_layout"
+	        />
+	    
+        
+        <include
+            android:id="@+id/pEquip"
+            layout="@layout/query_equipment_item_layout" />
+
+        <include
+            android:id="@+id/useStatus"
+            layout="@layout/query_equipment_item_layout" />
+
+        <include
+            android:id="@+id/storage"
+            layout="@layout/query_equipment_item_layout" />
+
+        <include
+            android:id="@+id/manufacturer"
+            layout="@layout/query_equipment_item_layout" />
+		
+        <include
+            android:id="@+id/mfgNO"
+            layout="@layout/query_equipment_item_layout" />
+
+        <include
+            android:id="@+id/modelNO"
+            layout="@layout/query_equipment_item_layout" />
+        
+        <include
+            android:id="@+id/supplier"
+            layout="@layout/query_equipment_item_layout"/>
+            
+		<include
+		    android:id="@+id/purchaseDate"
+		    layout="@layout/query_equipment_item_layout"/>
+		
+		<include 
+		    android:id="@+id/equipmentAmount"
+		    layout="@layout/query_equipment_item_layout"/>
+		
+		<include
+		    android:id="@+id/unitsid"
+		    layout="@layout/query_equipment_item_layout"/>
+		    
+	
+	</LinearLayout>
+</LinearLayout>  <!-- From: file:/F:/workspace/UPG/res/layout/query_equipment_detail_layout.xml -->

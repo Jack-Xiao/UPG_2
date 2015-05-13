@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/equipmentName"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"/>"
+
+            <TextView
+                android:id="@+id/equipmentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical|left"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/dependenceEquipemnt"
+            layout="@layout/query_equipment_item_layout" />
+
+        <include
+            android:id="@+id/useState"
+            layout="@layout/query_equipment_item_layout" />
+
+        <include
+            android:id="@+id/curLocation"
+            layout="@layout/query_equipment_item_layout" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+    <TextView
+        android:id="@+id/wx_taskNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        />
+    <Button
+        android:id="@+id/wx_taskBtn"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="#005FCB"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="3dp"
+        />
+    <TextView
+        android:id="@+id/wx_taskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/wx_taskBtn"
+        android:layout_toRightOf="@id/wx_taskNum"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:maxLines="2"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        />
+
+</RelativeLayout><!-- From: file:/F:/workspace/UPG/res/layout/wx_task_download_item.xml -->

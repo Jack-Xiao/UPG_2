@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"  
+    android:layout_height="wrap_content"  
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ECEDEE"
+    >
+    
+    <TextView 
+        android:id="@+id/taskIndex"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerVertical="true"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="5dp"
+    	android:textColor="#000000"
+    	android:textSize="14sp"
+        />
+    
+    <TextView 
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"  
+    	android:layout_height="wrap_content"
+    	android:layout_centerVertical="true"
+    	android:layout_toRightOf="@id/taskIndex"
+    	android:textColor="#666666"
+    	android:textSize="14sp"
+    	android:maxLines="2"
+    	android:ellipsize="end"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="5dp"
+        />
+    
+</RelativeLayout> 

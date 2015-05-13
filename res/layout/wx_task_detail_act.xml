@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:background="#FFF"
+    android:orientation="vertical"  
+    >
+    
+    <include layout="@layout/header_layout2"/>
+
+    <ScrollView 
+         android:layout_width="match_parent"  
+         android:layout_height="0.0dp"  
+         android:layout_weight="1"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"  
+    		android:layout_height="wrap_content"  
+    		android:orientation="vertical"
+            >
+            <!-- 
+            <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:orientation="horizontal"
+			    >
+			    <TextView 
+			        android:layout_width="85dp"
+			   		android:layout_height="wrap_content"
+			   		android:gravity="center_vertical|right"
+			   		android:text="条码："
+			   		android:textColor="#000000"
+			   		android:textSize="12sp"
+			        />
+			    <TextView 
+			        android:id="@+id/content"
+			        android:layout_width="match_parent"
+			   		android:layout_height="wrap_content"
+			   		android:layout_marginLeft="8dp"
+			   		android:layout_marginRight="8dp"
+			   		android:gravity="center_vertical|left"
+			   		android:textColor="#000000"
+			   		android:textSize="12sp"
+			   		android:visibility="gone"
+			        />
+			    <EditText
+			        android:layout_width="match_parent"
+			   		android:layout_height="wrap_content"
+			   		android:padding="5dp"
+			   		android:layout_marginLeft="8dp"
+			   		android:layout_marginRight="8dp"
+			   		android:hint="请扫描条码"
+			   		android:background="@drawable/edit_text_border"
+			   		android:textSize="12sp"
+			        />
+			</LinearLayout>  -->
+			<include layout="@layout/wx_task_detail_item_layout" android:id="@+id/wx_codeLayout"/>
+            <include layout="@layout/wx_task_detail_item_layout" android:id="@+id/wx_planLayout"/>
+            <include layout="@layout/wx_task_detail_item_layout" android:id="@+id/wx_maintenacetaskname"/>
+            <include layout="@layout/wx_task_detail_item_layout" android:id="@+id/wx_equipmentName"/>
+            <include layout="@layout/wx_task_detail_item_layout" android:id="@+id/wx_equipmentNum"/>
+            <include layout="@layout/wx_task_detail_item_layout" android:id="@+id/wx_maintenacestate"/>
+            <include layout="@layout/wx_task_detail_item_rich_layout" android:id="@+id/wx_problemDesc"/>
+            <include layout="@layout/wx_task_detail_item_rich_layout" android:id="@+id/wx_problemSuggestion"/>
+            <include layout="@layout/wx_task_detail_item_rich_layout" android:id="@+id/wx_problemMeasure"/>
+            <include layout="@layout/wx_task_detail_item_rich_layout" android:id="@+id/sparepartlayout" />
+
+        <LinearLayout
+            android:id="@+id/wxAddtionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+                <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="故障图片："
+                android:textColor="#000000"
+                android:textSize="12sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarAlwaysDrawHorizontalTrack="false">
+                    <LinearLayout
+                        android:id="@+id/wxImageInfoContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            
+	         <LinearLayout 
+		        android:id="@+id/wx_addtionLayout"
+		        android:layout_width="match_parent"  
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_vertical"
+		        android:orientation="vertical"
+		        android:visibility="gone">
+		        <TextView
+		            android:layout_width="85dp"
+			   		android:layout_height="wrap_content"
+			   		android:gravity="center_vertical|right"
+			   		android:text="更换备件清单："
+			   		android:layout_marginTop="10dp"
+			   		android:textColor="#000000"
+			   		android:textSize="12sp"/>
+		         <HorizontalScrollView
+		            android:layout_width="match_parent"  
+			    	android:layout_height="wrap_content"
+			    	android:scrollbarAlwaysDrawHorizontalTrack="false"
+			    	>
+		            <LinearLayout 
+			            android:id="@+id/wx_addSpearContainer"
+			            android:layout_width="wrap_content"  
+			    		android:layout_height="90dp"
+			    		android:gravity="center_vertical"
+			    		android:padding="5dp"
+			    		android:orientation="horizontal" >
+			        </LinearLayout>
+		        </HorizontalScrollView>
+		        
+		        <TextView 
+			        android:layout_width="85dp"
+			   		android:layout_height="wrap_content"
+			   		android:gravity="center_vertical|right"
+			   		android:text="附件资料："
+			   		android:textColor="#000000"
+			   		android:textSize="12sp"
+			        />
+		        <HorizontalScrollView
+		            android:layout_width="match_parent"  
+			    	android:layout_height="wrap_content"
+			    	android:scrollbarAlwaysDrawHorizontalTrack="false"
+			    	>
+		            <LinearLayout 
+			            android:id="@+id/wx_addContainer"
+			            android:layout_width="wrap_content"  
+			    		android:layout_height="90dp"
+			    		android:gravity="center_vertical"
+			    		android:padding="5dp"
+			    		android:orientation="horizontal" >
+			        </LinearLayout>
+		        </HorizontalScrollView>
+		    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    
+    <LinearLayout
+        android:id="@+id/wx_beginmaintenace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+        
+        <Button 
+             android:id="@+id/btnBegin"
+             android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:text="@string/beginmaintenace"
+		     android:layout_marginLeft="10dp"
+		     android:layout_marginRight="7dp"     
+		     android:textColor="#FFF"
+		     android:textSize="18sp"
+		     android:background="@drawable/button_blue">
+        </Button>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/wx_resultLayout"
+        android:layout_width="match_parent"  
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+       
+        <include layout="@layout/bottom_double_btn_layout" android:id="@+id/wx_confirmbuttonlayout"/>
+	        <!-- <LinearLayout   
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginBottom="15dp"
+			    android:orientation="horizontal">
+			    <Button 
+			         android:id="@+id/btnConfirm"
+			         android:layout_width="match_parent"
+				     android:layout_height="wrap_content"
+				     android:layout_weight="1"
+				     android:text="@string/confirm"
+				     android:layout_marginLeft="10dp"
+				     android:layout_marginRight="7dp"
+				     android:textColor="#FFF"
+				     android:textSize="18sp"
+				     android:background="@drawable/button_blue"
+			        />
+	    	</LinearLayout> -->
+    </LinearLayout>
+    
+</LinearLayout> 

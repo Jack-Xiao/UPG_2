@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="#FFF"  
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/message"
+        android:layout_width="250dp"  
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text=""
+        />
+    <!-- 
+    <include  layout="@layout/bottom_double_btn_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+ -->
+    <LinearLayout  
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="5dp"
+	    android:orientation="horizontal"
+	    >
+	    <Button 
+	         android:id="@+id/btnConfirm"
+	         android:layout_width="100dp"
+		     android:layout_height="wrap_content"
+		     android:padding="5dp"
+		     android:text="@string/confirm"
+		     android:layout_marginLeft="15dp"
+		     android:layout_marginRight="7dp"
+		     android:textColor="#FFF"
+		     android:textSize="18sp"
+		     android:background="#005FCB"
+	        />
+	    <Button 
+	         android:id="@+id/btnCancel"
+	         android:layout_width="100dp"
+		     android:layout_height="wrap_content"
+		     android:padding="5dp"
+		     android:layout_marginLeft="7dp"
+		     android:layout_marginRight="15dp"
+		     android:text="@string/cancel"
+		     android:textColor="#FFF"
+		     android:textSize="18sp"
+		     android:background="#CC0000"
+	        />
+	</LinearLayout>
+</LinearLayout>  
+  
+<!-- From: file:/F:/workspace/UPG/res/layout/dialog_normal_layout.xml -->

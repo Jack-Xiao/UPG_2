@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UPG</string>
+    <string name="app_versionnum">1</string>
+    <string name="app_versionname">1.8</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_service_address">服务器地址</string>
+    <string name="service_address">服务器地址:</string>
+    <string name="service_port">端口:</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="beginmaintenace">开始维修</string>
+    <string name="change_password">密码修改</string>
+    <string name="test">测试</string>
+    <string name="warningmaxphoto">已到图片上传上限数</string>
+    <string name="scan_text">将二维码 /条码 放入框内, 即可自动扫描</string>
+    
+</resources>
